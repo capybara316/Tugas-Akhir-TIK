@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikardo Gaming Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="left-header">
+        <img src="logo.png" class="logo" alt="Logo">
+        <div class="brand">
+            <h1 class="name">Rikardo Gaming</h1>
+            <h4 class="tagline">Level Up Your Gear!</h4>
+        </div>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Cari Gear Impianmu...">
+    </div>
+
+    <div class="profile-section">
+        <span>Profile</span>
+        <div class="profile-circle"></div>
+    </div>
+</header>
+
+<!-- PRODUCT LIST -->
+<section class="products">
+
+    <div class="product-card">
+        <img src="cooler.png" alt="Cooler Laptop">
+        <div class="title">Gaming Laptop</div>
+        <div class="price">Rp 14.999.000</div>
+        <button class="btn-order" onclick="openPopup()">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+        <img src="keyboard.png" alt="Mechanical Keyboard">
+        <div class="title">Keyboard Mechanical</div>
+        <div class="price">Rp 899.000</div>
+        <button class="btn-order" onclick="openPopup()">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+        <img src="mouse.png" alt="Gaming Mouse">
+        <div class="title">Gaming Mouse</div>
+        <div class="price">Rp 450.000</div>
+        <button class="btn-order" onclick="openPopup()">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+        <img src="headset.png" alt="Gaming Headset">
+        <div class="title">Gaming Headset</div>
+        <div class="price">Rp 799.000</div>
+        <button class="btn-order" onclick="openPopup()">Beli Sekarang</button>
+    </div>
+
+</section>
+
+<!-- POPUP ORDER FORM -->
+<div class="overlay" id="overlay">
+
+    <div class="popup" id="popupForm">
+        <h2>Order Gear</h2>
+
+        <input type="text" id="lokasi" placeholder="Alamat Pengiriman" required>
+        <input type="text" id="hp" placeholder="Nomor HP" required>
+        <input type="email" id="email" placeholder="Email Aktif" required>
+
+        <button class="btn-submit" onclick="submitForm()">Pesan Sekarang</button>
+    </div>
+
+    <!-- SUCCESS MESSAGE -->
+    <div class="success" id="successMsg">
+        <div class="checkmark">✔</div>
+        Pesanan Anda Sedang Diproses!
+    </div>
+
+</div>
+
+<script src="gamingstore.js"></script>
+</body>
+</html>
